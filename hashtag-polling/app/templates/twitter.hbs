@@ -1,0 +1,9 @@
+<!--You searched for: {{model.searchInThisRoute}}-->
+
+<br/>
+{{#each model.searchInThisRoute as |quote|}}
+    Text: {{quote.text}}<br/>
+    Retweets: {{quote.retweet_count}}<br/>
+    Fav Count: {{quote.favorite_count}}<br/><br/>
+{{/each}}
+{{yield}}
